@@ -1,5 +1,12 @@
 package graphs;
 
+/**
+ * 
+ * @author Wilson Soto
+ * @since 20.06.16
+ *
+ */
+
 public interface LinearList
 {
     //return true if the list is empty. false otherwise

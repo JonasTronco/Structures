@@ -1,5 +1,11 @@
 package graphs;
 
+/**
+ * 
+ * @author Wilson Soto
+ * @since 20.06.16
+ *
+ */
 public interface Graph {
 
 	public void insertVertex(int n);
