@@ -94,13 +94,12 @@ public class ArrayLinearList implements LinearList
     * index is not between 0 and size */
     public void add(int index, Object theElement)
     {
-        if (index < 0 || index > size)
-            throw new IndexOutOfBoundsException ("index = " + index + " size = " + size);
-
+    	checkIndex(index);
+    	
         if (size == element.length) // no space, double capacity
             element = ChangeArrayLength.changeLength1D(element, 2 * size);
 
-    // shift elements right one position
+        // shift elements right one position
         for (int i = size - 1; i >= index; i--)
             element[i + 1] = element[i];
 
