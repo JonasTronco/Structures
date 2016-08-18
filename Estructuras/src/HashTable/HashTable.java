@@ -110,10 +110,12 @@ package HashTable;
         }
     }
 
-     /**
-      * output the hash table
-      */
-     public String toString() {
+    /**
+     * 
+     * Print the data structure
+     * 
+     */
+    public String toString() {
          StringBuffer s=new StringBuffer("");
          for (int i = 0; i < divisor; i++) {
              if (table[i] == null) {
