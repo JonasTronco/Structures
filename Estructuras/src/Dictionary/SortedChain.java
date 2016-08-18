@@ -121,28 +121,4 @@ public class SortedChain {
         return new String(s);
     }
     
-    public static void main (String[] args) {
-        
-        SortedChain myDic = new SortedChain();
-        myDic.put("si", "if");
-        myDic.put("sino", "else");
-        myDic.put("mientras", "mientras");
-        myDic.put("para", "for");
-        myDic.put("entonces", "{");
-        myDic.put("fin", "}");
-        myDic.put("<-", "=");
-        myDic.put("=", "==");
-        myDic.put("<>", "!=");
-        
-        System.out.println(" si ( a <> 0 ) entonces a <- a + 1 fin ");
-        System.out.println(myDic);
-
-        System.out.println(myDic.get("<-"));
-        //System.out.println(myDic.get(1)+""+myDic.get(3)+myDic.get(4)+myDic.get(2));
-        //System.out.println(myDic.remove(2));
-        
-        System.out.println(myDic);
-        
-    }
-
 }
