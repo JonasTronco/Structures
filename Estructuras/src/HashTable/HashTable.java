@@ -40,7 +40,7 @@ package HashTable;
         int i = Math.abs(theKey.hashCode()) % divisor;
         int j = i; // start at home bucket
         do {
-            if (op==1 && table[j]==null) { //find bucket null insertion
+            if (op==1) { //find bucket insertion
                 return j;
             }
             if (op==2 && table[j]!=null) { //find key get and remove
