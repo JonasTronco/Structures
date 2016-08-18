@@ -124,31 +124,4 @@ package HashTable;
          }
          return new String(s);
      }
-     
-    /**
-     * test method
-     */
-    public static void main(String[] args) {
-        
-        HashTable x = new HashTable(8);
-        x.put(41, 'b');
-        x.put(65, 'c');        
-        x.put(73, 'd');
-        x.put(88, 'e');
-        x.put(49, 'f');
-        x.put(9,  'g');
-        x.put(25, 'h');
-        x.put(49, 'a');
-        System.out.println(x);
-        x.remove(41);
-        x.remove(65);
-        x.remove(73);
-        x.put(75, 'a');
-        
-        System.out.println(new Integer('w')+" "+new Integer('i'));
-        System.out.println(((22*88+44)%23)%8);
-        
-        System.out.println(x);
-        
-    }
 }
