@@ -15,6 +15,7 @@ public class ChangeArrayLength {
         Object [] newArray = (Object []) Array.newInstance (a.getClass().getComponentType(), newLength);
         
         // copy from old space to new space
+        // System.arraycopy (Object src, int srcPos, Object dest, int destPos, int length)
         System.arraycopy(a, 0, newArray, 0, n);
         
         return newArray;
