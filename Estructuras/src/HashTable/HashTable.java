@@ -41,9 +41,11 @@ package HashTable;
         int j = i; // start at home bucket
         do {
             if (op==1) { //find bucket insertion
-            	if (table[j].key.equals(theKey)) {
-            		return j;
-            	}
+                if (table[j]==null)
+              	  return j;
+                else
+              	  if (table[j].key.equals(theKey))
+              		  return j;
             }
             if (op==2 && table[j]!=null) { //find key get and remove
                 if (table[j].key.equals(theKey)) {
