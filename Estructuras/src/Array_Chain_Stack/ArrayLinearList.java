@@ -94,7 +94,9 @@ public class ArrayLinearList implements LinearList
     * index is not between 0 and size */
     public void add(int index, Object theElement)
     {
-    	checkIndex(index);
+    	//This validation is different by > with the method checkIndex
+        if (index < 0 || index > size)
+            throw new IndexOutOfBoundsException ("index = " + index + " size = " + size);
     	
         if (size == element.length) // no space, double capacity
             element = ChangeArrayLength.changeLength1D(element, 2 * size);
