@@ -1,24 +1,28 @@
 package graphs;
 
+import edu.sergioarboleda.datastructure.graph.model.Graph;
+import edu.sergioarboleda.datastructure.graph.model.List;
+import edu.sergioarboleda.datastructure.graph.model.ListNode;
+
 /**
  * 
  * @author Wilson Soto
  * @since 20.06.16
  *
  */
-public class GraphAL implements Graph {
+public class GraphAdyList implements Graph {
 
 	boolean diGraph;
 	int maxVertex;
 	int numVertex;
 	List listAdy [];
 
-	public GraphAL (boolean d) {
+	public GraphAdyList (boolean d) {
 		maxVertex = numVertex = 0;
 		diGraph = d;
 	}
 
-	public GraphAL (int n, boolean d) {
+	public GraphAdyList (int n, boolean d) {
 		diGraph = d;
 		maxVertex = n;
 		numVertex = 0;
@@ -124,7 +128,7 @@ public class GraphAL implements Graph {
 		return size;
 	}
 
-	static int numElementos (List lista) {
+	public int numElementos (List lista) {
 		ListNode aux = lista.firstNode;
 		int resul = 0;
 		while (aux != null) {
@@ -134,8 +138,8 @@ public class GraphAL implements Graph {
 		return resul;
 	}
 		
-	public void imprimirGrafo () {
-		System.out.println("Maximum size graph: " + maxVertex + "\n");
+	public void printGraph () {
+		System.out.println("Number maximum of vertices: " + maxVertex + "\n");
 		System.out.println("the graph has " + numVertex + " vertex: \n");
 		for (int i = 0; i < numVertex; i++) {
 			System.out.print ("Vertex " + i + ": ");
@@ -143,7 +147,7 @@ public class GraphAL implements Graph {
 		}
 	}
 	
-	static void toString (List lista) {
+	public void toString (List lista) {
 		ListNode aux;
 		aux = lista.firstNode;
 		String str = "";
