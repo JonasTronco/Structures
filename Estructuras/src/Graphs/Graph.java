@@ -9,63 +9,63 @@ package graphs;
 public interface Graph {
 
 	/**
-	 * 
-	 * @param n number maximum of vertices
+	 * @param n
 	 */
 	public void insertVertex(int n);
 	
 	/**
-	 * 
-	 * @param v index vertex
+	 * @param v
 	 */
 	public void deleteVertex(int v);
 	
 	/**
 	 * 
-	 * @param i source vertex
-	 * @param j target vertex
+	 * @param i
+	 * @param j
 	 */
 	public void insertEdge(int i, int j);
 	
 	/**
 	 * 
-	 * @param i source vertex
-	 * @param j target vertex
+	 * @param i
+	 * @param j
 	 */
 	public void deleteEdge(int i, int j);
 	
 	/**
-	 * There are or there are not edges
+	 * 
 	 */
 	public boolean isEmpty();
 	
 	/**
 	 * 
-	 * @param i source vertex
-	 * @param j target vertex
+	 * @param i
+	 * @param j
 	 */
 	public boolean existEdge(int i, int j);
 
 	/**
 	 * 
-	 * @param i index vertex
+	 * @param i
+	 * @param j
 	 */
 	public int degreeIn(int i);
 
 	/**
 	 * 
-	 * @param i index vertex
+	 * @param i
+	 * @param j
 	 */
 	public int degreeOut(int i);
 
 	/**
 	 * 
-	 * @param i index vertex
+	 * @param i
 	 */
 	public int incidence (int i);
 
 	/**
-	 * Number of edges
+	 * 
 	 */
 	public int size();
 		
