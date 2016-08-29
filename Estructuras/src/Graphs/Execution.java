@@ -14,6 +14,7 @@ public class Execution {
 		
 		g.insertVertex(5);
 		
+		
 		g.insertEdge(0, 1);
 		g.insertEdge(1, 2);
 		g.insertEdge(2, 3);
