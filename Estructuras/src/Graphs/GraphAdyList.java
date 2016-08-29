@@ -1,9 +1,5 @@
 package graphs;
 
-import edu.sergioarboleda.datastructure.graph.model.Graph;
-import edu.sergioarboleda.datastructure.graph.model.List;
-import edu.sergioarboleda.datastructure.graph.model.ListNode;
-
 /**
  * 
  * @author Wilson Soto

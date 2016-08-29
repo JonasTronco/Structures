@@ -1,7 +1,5 @@
 package graphs;
 
-import edu.sergioarboleda.datastructure.graph.model.GraphAdyList;
-
 /**
  * 
  * @author wilson.soto
