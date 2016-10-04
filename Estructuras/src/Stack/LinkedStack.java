@@ -51,7 +51,7 @@ public class LinkedStack implements Stack {
 		}
 
 		// remove last ", "
-		if (size > 0)
+		if (s.length() > 0)
 			s.delete(s.length() - 2, s.length());
 
 		s.append("]");
