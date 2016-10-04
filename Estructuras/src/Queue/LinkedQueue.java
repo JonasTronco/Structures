@@ -1,5 +1,7 @@
 package Queue;
 
+import edu.sergioarboleda.datastructures5.test.ChainNode;
+
 /**
  *
  * <img src="./images/Queue4.jpg" width="100%" height="100%">
@@ -68,5 +70,30 @@ public class LinkedQueue implements Queue {
         }
         return frontElement;
     }
+    
+    public String toString() {
+		StringBuffer s = new StringBuffer("[");
+
+		// put elements into the buffer
+		ChainNode currentNode = topNode;
+
+		while (currentNode != null) {
+			if (currentNode.element == null)
+				s.append("null, ");
+			else
+				s.append(currentNode.element.toString().concat(", "));
+			currentNode = currentNode.next;
+		}
+
+		// remove last ", "
+		if (s.length()>0)
+			s.delete(s.length() - 2, s.length());
+
+		s.append("]");
+
+		// create equivalent String
+		return new String(s);
+
+	}
 
 }
