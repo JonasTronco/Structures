@@ -11,7 +11,7 @@ public class MyMath {
     public static int max (Comparable []a, int i) {
         Comparable val=a[0];
         int pos=0;
-        for (int x=1; x<i; x++)
+        for (int x=1; x<=i; x++)
             if (a[x].compareTo(val)>0) { 
                 val=a[x];
                 pos=x;
