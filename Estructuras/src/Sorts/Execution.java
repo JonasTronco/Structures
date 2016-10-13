@@ -34,7 +34,7 @@ public class Execution {
             case 1: System.out.println("SelectionSort"); selectionSort(a); break;
             case 2: System.out.println("InsertionSort"); insertionSort(a); break;
             case 3: System.out.println("BubbleSort"); bubbleSort(a); break;
-            case 4: System.out.println("MergeSort"); mergeSort(a); break;//mergeSort(a,0,a.length-1); break;
+            case 4: System.out.println("MergeSort"); mergeSort(a,0,a.length-1); break;//mergeSort(a); break;
             case 5: System.out.println("QuickSort"); quickSort(a); break;
             case 6: System.out.println("HeapSort"); heapSort(a1); break;
         }
