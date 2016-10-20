@@ -10,14 +10,15 @@ public class Reflect {
     
     static Method y;
     
-    static Class[] paramType = {int.class, double.class};
+    static Class<?>[] paramType = {int.class, double.class};
     
     static { 
         try {
             a=10;
-            Class c = Reflect.class;
+            Class<Reflect> c = Reflect.class;
+            //c = Class.forName("edu.sergioarboleda.sistemas3.actividad5.model.Reflect");
             x = c.getMethod("method1", paramType);
-            y = c.getMethod("method2", null);
+            y = c.getMethod("method2");
         } catch (Exception ex) {
         }
     }
@@ -41,7 +42,9 @@ public class Reflect {
             System.out.println(y.invoke(d));
             
             System.out.println(a>0?"positivo":"negativo");
+            
         } catch (Exception ex) {
+        	System.out.println("Error reflection");
         }
         
     }
