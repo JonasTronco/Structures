@@ -1,16 +1,17 @@
-package Tree;
+package edu.sergioarboleda.sistemas3.tree.model;
 
 import java.util.Scanner;
-
-import edu.sergioarboleda.sistemas3.tree.model.BinaryTreeNode;
-import edu.sergioarboleda.sistemas3.tree.model.LinkedBinaryTree;
 
 public class Execution {
 
 	public static void main(String[] args) {
 
-		LinkedBinaryTree a = new LinkedBinaryTree(), x = new LinkedBinaryTree(), y = new LinkedBinaryTree(),
-				z = new LinkedBinaryTree(), w = new LinkedBinaryTree(), v = new LinkedBinaryTree();
+		LinkedBinaryTree a = new LinkedBinaryTree(), 
+							x = new LinkedBinaryTree(), 
+								y = new LinkedBinaryTree(),
+									z = new LinkedBinaryTree(), 
+										w = new LinkedBinaryTree(), 
+											v = new LinkedBinaryTree();
 
 		// Build from leaves to root
 		y.makeTree(new Integer(1), a, a);
@@ -62,17 +63,22 @@ public class Execution {
 					add.leftChild = null;
 					add.rightChild = null;
 					// Rigth(r) or Left(l)
-					if (entrada.nextLine().equals("r")) {
+					String pos = entrada.nextLine();
+					if (pos.equals("r")) {
 						if (xs.rightChild == null) {
 							xs.rightChild = add;
 						} else {
 							xs.rightChild.element = s;
 						}
 					} else {
-						if (xs.leftChild == null) {
-							xs.leftChild = add;
+						if (pos.equals("l")) {
+							if (xs.leftChild == null) {
+								xs.leftChild = add;
+							} else {
+								xs.leftChild.element = s;
+							}
 						} else {
-							xs.leftChild.element = s;
+							System.out.println("Position wrong!!!");
 						}
 					}
 				} else {

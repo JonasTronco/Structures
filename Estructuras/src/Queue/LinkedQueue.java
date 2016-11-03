@@ -75,7 +75,7 @@ public class LinkedQueue implements Queue {
 		StringBuffer s = new StringBuffer("[");
 
 		// put elements into the buffer
-		ChainNode currentNode = topNode;
+		ChainNode currentNode = front;
 
 		while (currentNode != null) {
 			if (currentNode.element == null)
