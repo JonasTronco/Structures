@@ -67,8 +67,9 @@ public class CircularWithHeader implements LinearList {
         checkIndex(index);
         Object removedElement;
         ChainNode q = headerNode;
-        for (int i = 0; i < index; i++) q = q.next;
-            removedElement = q.next.element;
+        for (int i = 0; i < index; i++) 
+        	q = q.next;
+        removedElement = q.next.element;
         q.next = q.next.next;
         size--;
         return removedElement;

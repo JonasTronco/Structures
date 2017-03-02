@@ -8,7 +8,7 @@ package HashTable;
     protected int size; // number of elements in table
 
     // constructors
-    private HashTable(int theDivisor) {
+    public HashTable(int theDivisor) {
          divisor = theDivisor;
          // allocate hash table array
          table = new HashEntry[divisor];
