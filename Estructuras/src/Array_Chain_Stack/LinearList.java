@@ -3,9 +3,9 @@ package Array_Chain_Stack;
 public interface LinearList
 {
     
-	/**
-	 * Return true if the list is empty. false otherwise 
-	 */
+    /**
+     * Return true if the list is empty. false otherwise 
+     */
     public boolean isEmpty();
     
     /**
@@ -41,5 +41,4 @@ public interface LinearList
      */
     public String toString();
 
-}
 }
