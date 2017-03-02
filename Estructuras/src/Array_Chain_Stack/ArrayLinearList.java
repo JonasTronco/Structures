@@ -10,9 +10,9 @@ public class ArrayLinearList implements LinearList
     protected int size; // number of elements in array
 
     // constructors
-    /** create a list with initial capacity initialCapacity
-    * @throws IllegalArgumentException when
-    * initialCapacity < 1 */
+    // create a list with initial capacity initialCapacity
+    // @throws IllegalArgumentException when
+    // initialCapacity < 1 
     public ArrayLinearList(int initialCapacity)
     {
         if (initialCapacity < 1)
@@ -22,27 +22,27 @@ public class ArrayLinearList implements LinearList
         element = new Object [initialCapacity];
     }
 
-    /** create a list with initial capacity 8 */
+    // create a list with initial capacity 8
     public ArrayLinearList()
     {// use default capacity of 8
         this(8);
     }
 
     // methods
-    /** @return true iff list is empty */
+    // @return true iff list is empty
     public boolean isEmpty()
     {
         return size == 0;
     }
 
-    /** @return current number of elements in list */
+    // @return current number of elements in list
     public int size()
     {
         return size;
     }
 
-    /** @throws IndexOutOfBoundsException when
-    * index is not between 0 and size - 1 */
+    // @throws IndexOutOfBoundsException when
+    // index is not between 0 and size - 1 
     void checkIndex(int index)
     {
         if (index < 0 || index >= size)
@@ -50,17 +50,17 @@ public class ArrayLinearList implements LinearList
         ("index = " + index + " size = " + size);
     }
 
-    /** @return element with specified index
-    * @throws IndexOutOfBoundsException when
-    * index is not between 0 and size - 1 */
+    // @return element with specified index
+    // @throws IndexOutOfBoundsException when
+    // index is not between 0 and size - 1
     public Object get(int index)
     {
         checkIndex(index);
         return element[index];
     }
 
-    /** @return index of first occurrence of theElement,
-    * return -1 if theElement not in list */
+    // @return index of first occurrence of theElement,
+    // return -1 if theElement not in list
     public int indexOf(Object theElement)
     {
         // search element[] for theElement
@@ -71,11 +71,11 @@ public class ArrayLinearList implements LinearList
         return -1;
     }
 
-    /** Remove the element with specified index. All elements with
-    * higher index have their index reduced by 1.
-    * @throws IndexOutOfBoundsException when
-    * index is not between 0 and size - 1
-    * @return removed element */
+    // Remove the element with specified index. All elements with
+    // higher index have their index reduced by 1.
+    // @throws IndexOutOfBoundsException when
+    // index is not between 0 and size - 1
+    // @return removed element
     public Object remove(int index)
     {
         checkIndex(index);
@@ -88,10 +88,10 @@ public class ArrayLinearList implements LinearList
         return removedElement;
     }
 
-    /** All elements with equal or higher index
-    * have their index increased by 1.
-    * @throws IndexOutOfBoundsException when
-    * index is not between 0 and size */
+    // All elements with equal or higher index
+    // have their index increased by 1.
+    // @throws IndexOutOfBoundsException when
+    // index is not between 0 and size
     public void add(int index, Object theElement)
     {
     	//This validation is different by > with the method checkIndex
@@ -109,7 +109,7 @@ public class ArrayLinearList implements LinearList
         size++;
     }
 
-    /** convert to a string */
+    // Convert to a string
     public String toString()
     {
         StringBuffer s = new StringBuffer("[");
