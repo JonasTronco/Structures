@@ -1,7 +1,6 @@
 package Array_Chain_Stack;
 
 import Utilities.ChangeArrayLength;
-import java.util.*;
 
 public class ArrayLinearList implements LinearList
 {

@@ -27,7 +27,6 @@ public class WireRouter {
     private static int[][] grid;
     private static int size;
     private static int pathLength;
-    private static ArrayQueue q;
     private static Position start, finish;
     private static Position[] path; // the shortest path
 
@@ -57,6 +56,7 @@ public class WireRouter {
                 grid[i][j] = keyboard.nextInt();
             }
         }
+        keyboard.close();
     }
 
     private static void outputPath() {

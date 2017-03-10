@@ -19,7 +19,7 @@ interface can be sorted.
  *
  */
 
-public abstract class Shape implements Comparable
+public abstract class ComparableExample implements Comparable
 {
 	public abstract double area();
 	
@@ -27,7 +27,7 @@ public abstract class Shape implements Comparable
 	
 	public int compareTo( Object rhs ) {
 		
-		Shape other = (Shape) rhs;
+		ComparableExample other = (ComparableExample) rhs;
 		double diff = area() - other.area();
 		if( diff == 0 )
 			return 0;

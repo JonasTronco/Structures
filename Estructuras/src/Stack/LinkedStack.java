@@ -1,6 +1,5 @@
 package Stack;
 
-import Array_Chain_Stack.*;
 import java.util.EmptyStackException;
 
 public class LinkedStack implements Stack {
