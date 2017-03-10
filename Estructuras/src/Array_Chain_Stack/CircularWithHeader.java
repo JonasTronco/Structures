@@ -79,5 +79,31 @@ public class CircularWithHeader implements LinearList {
         p.next = new ChainNode(theElement, p.next);
         size++;
     }
+    
+    public String toString () {
+        StringBuffer s = new StringBuffer("[");
+        
+        // put elements into the buffer
+        ChainNode currentNode = headerNode.next;
+
+        while(currentNode != headerNode)
+        {
+            if (currentNode.element == null)
+                s.append("null, ");
+            else
+                s.append(currentNode.element.toString().concat(", "));
+        currentNode = currentNode.next;
+        }
+        
+        // remove last ", "
+        if (size > 0)
+            s.delete(s.length() - 2, s.length());
+        
+        s.append("]");
+        
+        // create equivalent String
+        return new String(s);
+        
+    }
 
 }
