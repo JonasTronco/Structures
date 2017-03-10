@@ -18,9 +18,9 @@ public class Pila {
      */
     public static void main(String[] args) {
 
-        Stack a = new Stack();
-        Stack p = new Stack();
-        Stack s = new Stack();
+        Stack<Character> a = new Stack<Character>();
+        Stack<Character> p = new Stack<Character>();
+        Stack<Character> s = new Stack<Character>();
 
         a.push(new Character(')'));
         a.push(new Character(')'));

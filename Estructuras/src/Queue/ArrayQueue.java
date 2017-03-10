@@ -2,9 +2,6 @@
 package Queue;
 
 /**
- *
- * <img src="./images/Queue2.jpg" width="100%" height="100%">
- * <img src="./images/Queue3.jpg" width="100%" height="100%">
  * 
  * @author wilson soto
  * @since 14.09.15

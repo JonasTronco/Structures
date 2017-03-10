@@ -5,11 +5,11 @@
 package Collections;
 
 import java.util.*;
-import javax.swing.JOptionPane;
 
 /**
+ * 
+ * @author wilsonsoto
  *
- * @author lsanchezc9
  */
 public class Cajero {
 
@@ -17,17 +17,16 @@ public class Cajero {
 
         Random rnd = new Random();
 
+        int val = 5;
 
-        int val = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de usuarios"));
-
-        Queue<Object> x = new LinkedList();
+        Queue<Object> x = new LinkedList<Object>();
 
         for (int i = 0; i < val; i++) {
             x.add(i);
         }
         int total = 0;
         int time = 0;
-        for (Iterator s = x.iterator(); s.hasNext();) {
+        for (Iterator<Object> s = x.iterator(); s.hasNext();) {
             {
                 time = rnd.nextInt(1000);
                 Thread.sleep(time);

@@ -2,19 +2,33 @@ package Stack;
 
 /**
  *
- * 
- * 
- * <img src="./images/Stack.jpg" width="100%" height="100%">
- *   
  * @author wilson soto
- * 
  * 
  */
 
 public interface Stack {
+	/**
+	 * 
+	 * @return
+	 */
 	public boolean empty();
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public Object peek();
+	
+	/**
+	 * 
+	 * @param theObject
+	 */
 	public void push(Object theObject);
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public Object pop();
 }
 

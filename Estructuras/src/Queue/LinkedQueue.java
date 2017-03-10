@@ -4,8 +4,6 @@ import Array_Chain_Stack.*;
 
 /**
  *
- * <img src="./images/Queue4.jpg" width="100%" height="100%">
- *   
  * @author wilson soto
  * @since 14.09.15
  * 
