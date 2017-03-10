@@ -1,4 +1,4 @@
-package diagnose;
+package Diagnose;
 
 public class Tail_Recursion implements Functions {
 

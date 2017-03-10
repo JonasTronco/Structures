@@ -1,4 +1,4 @@
-package diagnose;
+package Diagnose;
 
 public class Simple_Recursion implements Functions {
 

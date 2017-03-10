@@ -1,5 +1,6 @@
 package Tree;
 
+import Queue.*;
 import java.lang.reflect.Method;
 
 public class LinkedBinaryTree implements BinaryTree {

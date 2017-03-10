@@ -1,6 +1,6 @@
 package Queue;
 
-import edu.sergioarboleda.datastructures5.test.ChainNode;
+import Array_Chain_Stack.*;
 
 /**
  *

@@ -1,4 +1,4 @@
-package edu.sergioarboleda.sistemas3.tree.model;
+package Tree;
 
 import java.util.Scanner;
 

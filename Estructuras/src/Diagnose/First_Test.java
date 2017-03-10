@@ -6,7 +6,7 @@
 	 * 			 
 	 */
 	
-	package diagnose;
+	package Diagnose;
 	
 	/**
 	 * 

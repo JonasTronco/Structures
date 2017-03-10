@@ -1,5 +1,6 @@
 package Stack;
 
+import Array_Chain_Stack.*;
 import java.util.EmptyStackException;
 
 public class LinkedStack implements Stack {
@@ -40,7 +41,7 @@ public class LinkedStack implements Stack {
 		StringBuffer s = new StringBuffer("[");
 
 		// put elements into the buffer
-		ChainNode topNode = firstNode;
+		ChainNode currentNode = topNode;
 
 		while (currentNode != null) {
 			if (currentNode.element == null)
