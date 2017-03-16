@@ -19,7 +19,7 @@ public interface LinearList
     public Object get(int index);
     
     /**
-     * Update the index-th element
+     * Update the index-th element of the list
      */
     public void set (int index, Object theElement);
     
