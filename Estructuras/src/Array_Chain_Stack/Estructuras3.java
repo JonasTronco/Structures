@@ -15,8 +15,15 @@ public class Estructuras3 {
         
         System.out.println("List=" + x);
         
+        for (int index = 0; index < x.size; index++)
+            x.set(index, (int) x.get(index) + index);
+        
+        System.out.println("List=" + x);
+        
         for (int i = 0; i < 10; i++)
             System.out.println(i + " is element " + x.indexOf(new Integer(i)));
+        
+        
     }
     
 }

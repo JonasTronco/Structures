@@ -57,7 +57,15 @@ public class ArrayLinearList implements LinearList
         checkIndex(index);
         return element[index];
     }
-
+    
+    // Update the element with specified index
+    // @throws IndexOutOfBoundsException when
+    // index is not between 0 and size - 1
+    public void set(int index, Object theElement){
+    	checkIndex(index);
+    	element[index] = theElement;
+    }
+    
     // @return index of first occurrence of theElement,
     // return -1 if theElement not in list
     public int indexOf(Object theElement)

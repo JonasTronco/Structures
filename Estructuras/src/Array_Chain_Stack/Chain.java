@@ -34,6 +34,14 @@ public class Chain implements LinearList {
         return currentNode.element;
     }
     
+    public void set (int index, Object theElement) {
+    	checkIndex (index);
+        ChainNode currentNode = firstNode;
+        for (int i=0; i<index; i++)
+            currentNode =  currentNode.next;
+        currentNode.element = theElement;
+    }
+    
     public int indexOf (Object theElement) {
         ChainNode currentNode = firstNode;
         int index=0;

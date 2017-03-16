@@ -42,6 +42,9 @@ public class Estructuras2 {
         System.out.println(x.remove(2) + " removed");
         System.out.println("The list is " + x);
         
+        x.set(1, new Integer(8));
+        System.out.println("The list is " + x);
+        
         if (x.isEmpty())
             System.out.println("The list is empty");
         else 

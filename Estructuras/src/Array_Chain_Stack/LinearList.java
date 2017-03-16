@@ -19,25 +19,30 @@ public interface LinearList
     public Object get(int index);
     
     /**
+     * Update the index-th element
+     */
+    public void set (int index, Object theElement);
+    
+    /**
      * Return the position of the first occurrence of x
      * in the list, return -1 if x is not in the list
      */
     public int indexOf(Object theElement);
     
     /**
-     * Remove and return the indexth element, elements
+     * Remove and return the index-th element, elements
      * with higher index have their index reduced by 1 
      */
     public Object remove(int index);
     
     /**
-     * Insert x as the indexth element, elements with
+     * Insert x as the index-th element, elements with
      * index >= index have their index increased by 1 
      */
     public void add(int index, Object theElement);
     
     /**
-     * Ooutput the list elements from left to right
+     * Output the list elements from left to right
      */
     public String toString();
 

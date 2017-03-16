@@ -1,7 +1,7 @@
 
 package Array_Chain_Stack;
 
-public class Estructuras {
+public class Estructuras1 {
 
     public static void main(String[] args) {
 
@@ -40,6 +40,9 @@ public class Estructuras {
         System.out.println(x.remove(1) + " removed");
         System.out.println("The list is " + x);
         System.out.println(x.remove(2) + " removed");
+        System.out.println("The list is " + x);
+        
+        x.set(1, new Integer(8));
         System.out.println("The list is " + x);
         
         if (x.isEmpty()) 
