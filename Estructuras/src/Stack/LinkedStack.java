@@ -35,30 +35,5 @@ public class LinkedStack implements Stack {
 		topNode = topNode.next;
 		return topElement;
 	}
-
-	public String toString() {
-		StringBuffer s = new StringBuffer("[");
-
-		// put elements into the buffer
-		ChainNode currentNode = topNode;
-
-		while (currentNode != null) {
-			if (currentNode.element == null)
-				s.append("null, ");
-			else
-				s.append(currentNode.element.toString().concat(", "));
-			currentNode = currentNode.next;
-		}
-
-		// remove last ", "
-		if (s.length() > 0)
-			s.delete(s.length() - 2, s.length());
-
-		s.append("]");
-
-		// create equivalent String
-		return new String(s);
-
-	}
 	  
 }
