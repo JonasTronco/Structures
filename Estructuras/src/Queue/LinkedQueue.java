@@ -41,20 +41,6 @@ public class LinkedQueue implements Queue {
         }
     }
     
-    public void put(Object theElement) {
-    // create a node for theElement
-        ChainNode p = new ChainNode(theElement, null);
-    // append p to the chain
-        if (front == null) {
-            front = p;
-        } else {
-            rear.next = p;
-        }
-        rear = p;
-    // empty queue
-    // nonempty queue
-    }
-    
     public Object remove() {
         if (isEmpty()) {
             return null;
@@ -67,29 +53,17 @@ public class LinkedQueue implements Queue {
         return frontElement;
     }
     
-    public String toString() {
-		StringBuffer s = new StringBuffer("[");
+    public void put(Object theElement) {
 
-		// put elements into the buffer
-		ChainNode currentNode = front;
-
-		while (currentNode != null) {
-			if (currentNode.element == null)
-				s.append("null, ");
-			else
-				s.append(currentNode.element.toString().concat(", "));
-			currentNode = currentNode.next;
-		}
-
-		// remove last ", "
-		if (s.length()>0)
-			s.delete(s.length() - 2, s.length());
-
-		s.append("]");
-
-		// create equivalent String
-		return new String(s);
-
-	}
+        ChainNode p = new ChainNode(theElement, null);
+    
+        if (front == null) {
+            front = p;
+        } else {
+            rear.next = p;
+        }
+        rear = p;
+    
+    }
 
 }
