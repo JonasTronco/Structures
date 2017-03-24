@@ -1,5 +1,7 @@
 package Diagnose;
 
+import Array_Chain_Stack.LinearList;
+
 public class Simple_Recursion implements Functions {
 
 	public int factorial (int n) {
@@ -20,5 +22,9 @@ public class Simple_Recursion implements Functions {
 		if (n==0) return x;
 		else return sin_x_recursivo (x, n-1) + (power(-1,n)/factorial(2*n+1))*(power(x,2*n+1));
 	}
-		
+	
+    public int suma (LinearList y, int n) {
+        if (n==-1) return 0;
+        else return suma (y, n-1) + (Integer)y.get(n);
+    }
 }

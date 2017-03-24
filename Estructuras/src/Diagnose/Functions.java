@@ -1,5 +1,7 @@
 package Diagnose;
 
+import Array_Chain_Stack.LinearList;
+
 /**
  * 
  * @author wilson.soto
@@ -32,4 +34,14 @@ public interface Functions {
 	 * 
 	 */
 	public double sin_x (double x);
+	
+	/**
+	 * 
+	 * Sum elements in the array
+	 * 
+	 * @param y LinearList
+	 * @param n size
+	 * @return sum elements in the array
+	 */
+	public int suma (LinearList y, int n);
 }

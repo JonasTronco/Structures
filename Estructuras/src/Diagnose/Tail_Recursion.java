@@ -1,5 +1,7 @@
 package Diagnose;
 
+import Array_Chain_Stack.LinearList;
+
 public class Tail_Recursion implements Functions {
 
 	public double power(double x, int n) {
@@ -29,4 +31,12 @@ public class Tail_Recursion implements Functions {
 		else return sin_x_tail (x, n-1, r + (power(-1,n)/factorial(2*n+1))*(power(x,2*n+1)));
 	}	
 	
+    public int suma (LinearList y, int n) {
+    	return  suma(y, y.size()-1, 0);
+    }
+	
+    private int suma (LinearList y, int n, int acc) {
+        if (n==-1) return acc;
+        else return suma (y, n-1, acc + (Integer)y.get(n));
+    } 
 }

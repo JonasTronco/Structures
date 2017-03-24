@@ -4,18 +4,6 @@ public class Execution {
     
     public static void main(String[] args){
         
-        int N=500000000;
-        Stack stack = new ArrayStack();
-        while (N > 0) {
-            stack.push(N % 2);
-            N = N / 2;
-        }
-        while (!stack.empty()) {
-            System.out.print(stack.pop());
-        }
-        System.out.println();
-
-        
         Stack x = new  ArrayStack();
         Stack y = new  LinkedStack();
 

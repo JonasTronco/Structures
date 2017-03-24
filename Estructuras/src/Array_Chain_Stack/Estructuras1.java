@@ -51,14 +51,7 @@ public class Estructuras1 {
             System.out.println("List is not empty");
         
         System.out.println("List size is " + x.size());
-        
-        System.out.println(suma(x,x.size()-1,0));
                 
-    }
-    
-    public static int suma (LinearList y, int n, int acc) {
-        if (n==-1) return acc;
-        else return suma (y, n-1, acc + (Integer)y.get(n));
-    }    
+    }   
     
 }

@@ -11,7 +11,7 @@ import java.util.*;
  * @author wilsonsoto
  *
  */
-public class Cajero {
+public class BankQueue {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -32,10 +32,10 @@ public class Cajero {
                 Thread.sleep(time);
                 total = total + time;
 
-                System.out.println("El usuario " + x.remove() + " se demoro " + total + " Milisegundos");
+                System.out.println("The client " + x.remove() + " waste " + total + " Miliseconds");
             }
 
-            System.out.println("++++++" + x.peek());
+            System.out.println(" " + x.peek());
         }
     }
 }

@@ -12,14 +12,33 @@ import Stack.*;
  * 
  */
 
-public class Queues {
+public class Examples {
 
     public static void main(String[] args) {
         
-        Queues q = new Queues();
+        Examples q = new Examples();
+        q.unknown0(500000000);
         q.unknown1 (3,12);
         q.unknown2 (12);
         q.unknown3 (12);
+    }
+    
+    /**
+     * Decimal to Binary
+     * 
+     */
+    public void unknown0 (int N){
+    
+	    Stack stack = new ArrayStack();
+	    while (N > 0) {
+	        stack.push(N % 2);
+	        N = N / 2;
+	    }
+	    while (!stack.empty()) {
+	        System.out.print(stack.pop());
+	    }
+	    System.out.println();
+    
     }
     
 /**

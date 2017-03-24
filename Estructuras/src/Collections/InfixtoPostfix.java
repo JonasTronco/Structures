@@ -9,7 +9,7 @@ import java.util.Stack;
  * @author wilsonsoto
  *
  */
-public class Pila {
+public class InfixtoPostfix {
 
     /**
      * Metodo de creacion de pilas
