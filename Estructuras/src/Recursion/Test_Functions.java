@@ -1,4 +1,4 @@
-package Diagnose;
+package Recursion;
 
 import static org.junit.Assert.*;
 

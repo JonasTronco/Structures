@@ -1,4 +1,4 @@
-package Diagnose;
+package Recursion;
 
 import Array_Chain_Stack.LinearList;
 

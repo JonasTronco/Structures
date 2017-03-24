@@ -1,21 +1,21 @@
+
 package Array_Chain_Stack;
 
-public class Estructuras2 {
+public class Execution1 {
 
     public static void main(String[] args) {
-        
-        Chain x = new Chain();
-        
+
+        LinearList x = new ArrayLinearList();
+                
         System.out.println("Initial size is " + x.size());
-        
-        if (x.isEmpty())
-            System.out.println("The list is empty");
+        if (x.isEmpty()) 
+            System.out.println("List is empty");
         else 
             System.out.println("The list is not empty");
         
-        x.add(0, new Integer(2)); 
+        x.add(0, new Integer(2));
         x.add(1, new Integer(6));
-        x.add(0, new Integer(1)); 
+        x.add(0, new Integer(1));
         x.add(2, new Integer(4));
         
         System.out.println("List size is " + x.size());
@@ -45,13 +45,13 @@ public class Estructuras2 {
         x.set(1, new Integer(8));
         System.out.println("The list is " + x);
         
-        if (x.isEmpty())
-            System.out.println("The list is empty");
+        if (x.isEmpty()) 
+            System.out.println("List is empty");
         else 
-            System.out.println("The list is not empty");
+            System.out.println("List is not empty");
         
         System.out.println("List size is " + x.size());
-    
-    }
+                
+    }   
     
 }

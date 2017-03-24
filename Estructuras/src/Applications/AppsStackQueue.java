@@ -5,18 +5,16 @@ import Stack.*;
 
 /**
  * 
- * Ejemplos de aplicacion de la estructura de datos tipo cola 
- * 
  * @author Wilson Soto
  * @since 15.09.15
  * 
  */
 
-public class Examples {
+public class AppsStackQueue {
 
     public static void main(String[] args) {
         
-        Examples q = new Examples();
+        AppsStackQueue q = new AppsStackQueue();
         q.unknown0(500000000);
         q.unknown1 (3,12);
         q.unknown2 (12);

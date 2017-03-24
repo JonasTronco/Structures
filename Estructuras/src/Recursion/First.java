@@ -6,7 +6,7 @@
 	 * 			 
 	 */
 	
-	package Diagnose;
+	package Recursion;
 	
 	/**
 	 * 
