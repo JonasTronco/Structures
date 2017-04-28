@@ -9,8 +9,7 @@ public class Execution {
 		Scanner input = new Scanner(System.in);
 		String structure = "";
 
-		System.out
-				.println("(A)rrayLinearList - (C)hain - CircularWith(H)eader");
+		System.out.println("(A)rrayLinearList - (C)hain - CircularWith(H)eader");
 		char op = input.next().charAt(0);
 		if (op == 'A')
 			structure = "ArrayLinearList";
