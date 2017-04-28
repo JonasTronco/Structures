@@ -2,13 +2,13 @@ package PriorityQueue;
 
 public interface MaxPriorityQueue {
 
-    public boolean isEmpty();
+	public boolean isEmpty();
 
-    public int size();
+	public int size();
 
-    public Comparable getMax();
+	public Comparable getMax();
 
-    public void put(Comparable theObject);
+	public void put(Comparable theObject);
 
-    public Comparable removeMax();
+	public Comparable removeMax();
 }

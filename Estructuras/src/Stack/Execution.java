@@ -1,27 +1,41 @@
 package Stack;
 
-public class Execution {
-    
-    public static void main(String[] args){
-        
-        Stack x = new  ArrayStack();
-        Stack y = new  LinkedStack();
+import java.util.Scanner;
 
-        x.push(new Integer(8));
-        x.push(new Integer(1));
-        x.push(new Integer(2));
-        x.push(new Integer(3));
-        System.out.println (x);
-        x.pop();
-        System.out.println (x);
-       
-        y.push(new Integer(8));
-        y.push(new Integer(1));
-        y.push(new Integer(2));
-        y.push(new Integer(3));
-        System.out.println (y);
-        y.pop();
-        System.out.println (y);
-       
-    }
+public class Execution {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+		String structure = "";
+
+		System.out.println("(A)rrayStack - (L)inkedStack");
+		char op = input.next().charAt(0);
+		if (op == 'A')
+			structure = "ArrayStack";
+		if (op == 'L')
+			structure = "LinkedStack";
+
+		structure = "Stack." + structure;
+
+		Stack s;
+
+		try {
+			s = (Stack) Class.forName(structure).newInstance();
+
+			s.push(new Integer(8));
+			s.push(new Integer(1));
+			s.push(new Integer(2));
+			s.push(new Integer(3));
+
+			while (!s.empty())
+				System.out.println(s.pop());
+
+		} catch (InstantiationException | IllegalAccessException
+				| ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+
+		input.close();
+	}
 }
