@@ -39,7 +39,7 @@ public class ExecutionBidimensional {
 		int y = Integer.parseInt(in.next());
 		cols = (LinearList) rows.get(x);
 		System.out.println("pos ("+x+","+y+") : "+(int) cols.get(y));
-		cols.set(x, -1);
+		cols.set(y, -1);
 		
 		for (int idx = 0; idx < rows.size(); idx++) {
 			cols = (LinearList) rows.get(idx);
