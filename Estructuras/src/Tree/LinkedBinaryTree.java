@@ -5,9 +5,8 @@ import java.lang.reflect.Method;
 
 public class LinkedBinaryTree implements BinaryTree {
 
-	BinaryTreeNode root;
 	// root node
-
+	BinaryTreeNode root;
 	// class data members
 	static Method visit;
 	// visit method for traversal
@@ -22,7 +21,8 @@ public class LinkedBinaryTree implements BinaryTree {
 	static Method theOutput;
 	// method to output a node
 
-	// method to initialize class data members
+	// Static initialization block: 
+	// Runs once (when the class is initialized)
 	static {
 		try {
 			Class<?> lbt = LinkedBinaryTree.class;
