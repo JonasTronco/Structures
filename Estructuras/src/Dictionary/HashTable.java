@@ -1,6 +1,6 @@
-package HashTable;
+package Dictionary;
 
-public class HashTable {
+public class HashTable implements Dictionary{
 
 	// data members of HashTable
 	protected int divisor; // hash function divisor

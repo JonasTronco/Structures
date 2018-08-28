@@ -1,6 +1,6 @@
 package Dictionary;
 
-public class SortedChain {
+public class SortedChain implements Dictionary{
        
     // top-level nested class
     protected static class SortedChainNode {
